@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
+const cors = require("cors")
 require('dotenv/config');
 
 
@@ -8,6 +9,12 @@ const personRoutes = require('./routes/personRoutes')
 
 const DB_USERNAME = process.env.MONGO_USERNAME
 const DB_PASSWORD = encodeURIComponent(process.env.MONGO_PASSWORD)
+
+const corsOptions = {
+    origin: "*"
+}
+
+app.use(cors(corsOptions))
 
 app.use(
     express.urlencoded({
