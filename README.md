@@ -4,7 +4,7 @@ API realizada para a matéria de TC2, utilizando NodeJS, Express e MongoDB
 
 # Rotas
 
-[GET] /person \n
+[GET] /person <br>
 Retorna todas as pessoas cadastradas
 
 [POST] /person
