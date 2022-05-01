@@ -5,10 +5,10 @@ API realizada para a matéria de TC2, utilizando NodeJS, Express e MongoDB
 # Rotas
 
 [GET] /person <br>
-Retorna todas as pessoas cadastradas
+Retorna todas as pessoas cadastradas<br><br>
 
-[POST] /person
-Adiciona uma pessoa no sistema
+[POST] /person <br>
+Adiciona uma pessoa no sistema<br>
 Body example:
 ```
 {
@@ -18,15 +18,16 @@ Body example:
     "profession": "architecture"
 }
 ```
+<br>
 
-[GET] /person/{id}
-Recupera uma pessoa pelo id dela
+[GET] /person/{id}<br>
+Recupera uma pessoa pelo id dela<br>
 
-[DELETE] /person/{id}
-Deleta uma pessoa pelo id dela
+[DELETE] /person/{id}<br>
+Deleta uma pessoa pelo id dela<br>
 
-[PATCH] /person/{id}
-Edita dados de uma pessoa, baseado no id
+[PATCH] /person/{id}<br>
+Edita dados de uma pessoa, baseado no id<br>
 Body example:
 ```
 {
